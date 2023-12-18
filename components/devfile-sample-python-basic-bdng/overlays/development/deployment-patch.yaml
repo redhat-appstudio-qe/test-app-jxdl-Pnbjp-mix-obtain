@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-bdng
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-flij-tenant/test-app-jxdl/devfile-sample-python-basic-bdng@sha256:8e791751269a24c0a1fd39c82ef2ee7f731b5d2dc014505668d51217c0ce454b
+        name: my-python
+        resources: {}
+status: {}
